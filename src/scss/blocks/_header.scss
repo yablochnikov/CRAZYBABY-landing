@@ -1,0 +1,51 @@
+.header {
+  &__inner {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    .menu {
+      display: flex;
+      align-items: center;
+
+      &__item {
+        text-transform: uppercase;
+        width: 100px;
+        &-link {
+          text-decoration: none;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          color: $color-less-dark;
+          &:hover {
+            color: $color-most-dark;
+          }
+        }
+
+        &-active {
+          color: $color-most-dark;
+        }
+        button {
+          @include DesButton;
+          cursor: pointer;
+          background: $color-medium-dark;
+          color: #fff;
+          border: none;
+          width: 100px;
+          height: 48px;
+          &:hover {
+            background: $color-most-dark;
+          }
+        }
+      }
+    }
+  }
+}
