@@ -1,0 +1,73 @@
+.promo {
+  .container {
+    padding: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    padding: 0 20px;
+
+    &-heading {
+      @include MobileHeading1;
+      margin-top: 40px;
+    }
+
+    &-description {
+      @include DescMainText;
+      margin-top: 20px;
+      color: $color-medium-dark;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .promo {
+    .container {
+      padding: 0 20px;
+    }
+    &__inner {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__img {
+      order: 3;
+      z-index: 0;
+      background-image: url('../img/images/promo_tablet.jpg');
+    }
+    &__text {
+      width: 35%;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      &-heading {
+        @include TabletHeading1;
+      }
+      &-description {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1194px) {
+  .promo {
+    &__img {
+      background-image: url('../img/images/promo_desktop.jpg');
+    }
+    &__text {
+      &-heading {
+        @include DescHeading1;
+      }
+    }
+  }
+} ;
