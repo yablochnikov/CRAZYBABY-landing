@@ -1,0 +1,144 @@
+@use '../base/variables/variables' as colors;
+
+@mixin DescHeading1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-transform: uppercase;
+}
+
+@mixin DescHeading2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+@mixin DescHeading3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+@mixin DescHeading4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+@mixin DescHeading5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+@mixin DescHeading6 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin DesButton {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+@mixin DescMainText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@mixin DescSecondaryText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@mixin DescTertiaryText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@mixin DescQuote {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+@mixin TabletHeading1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+@mixin TabletHeading2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+@mixin TabletHeading3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@mixin PhoneHeading1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+@mixin PhoneHeading2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+@mixin PhoneHeading3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+@mixin PhoneQuote {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@mixin input {
+  padding: 12px 0 12px 20px;
+  border: 1px solid colors.$inputBorderColor;
+}
+
+@mixin inputFocus {
+  border-color: #0c797a;
+  outline: none;
+}
+
+// @mixin blackButton {
+//   background: colors.$mainTextColor;
+// }
+
+// @mixin blackButtonHover {
+//   background: colors.$hover;
+// }
+
+// @mixin blackButtonDisabled {
+//   background: colors.$disabled;
+// }
