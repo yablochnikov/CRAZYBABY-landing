@@ -1,0 +1,30 @@
+.navigation {
+  display: none;
+}
+
+@media (min-width: 1194px) {
+  .navigation {
+    margin-top: 170px;
+    display: block;
+    &__inner {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+      width: 759px;
+    }
+    &__link {
+      @include DescTertiaryText;
+      text-decoration: none;
+      color: $color-medium-dark;
+      &-active {
+        color: $color-most-dark;
+        @include DescHeading6;
+      }
+      &:hover {
+        color: $color-most-dark;
+      }
+    }
+  }
+}

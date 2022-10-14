@@ -9,6 +9,8 @@
   }
 
   &__img {
+    background: url('../img/images/promo_mobile.jpg') center center no-repeat;
+    height: 245px;
     width: 100%;
   }
 
@@ -41,14 +43,13 @@
 
     &__img {
       order: 3;
-      z-index: 0;
+      height: 317px;
       background-image: url('../img/images/promo_tablet.jpg');
     }
     &__text {
-      width: 35%;
+      width: 378px;
       padding: 0;
       position: relative;
-      z-index: 1;
       &-heading {
         @include TabletHeading1;
       }
@@ -62,7 +63,8 @@
 @media (min-width: 1194px) {
   .promo {
     &__img {
-      background-image: url('../img/images/promo_desktop.jpg');
+      height: 464px;
+      background: url('../img/images/promo_desktop.jpg') center left no-repeat;
     }
     &__text {
       &-heading {
