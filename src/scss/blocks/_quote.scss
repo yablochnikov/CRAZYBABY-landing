@@ -1,0 +1,47 @@
+.quote {
+  &__inner {
+    padding-top: 110px;
+    height: 320px;
+    background: url('../img/images/quote.png') center center no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__text {
+    @include MobileQuote;
+    text-align: center;
+  }
+  &__avatar {
+    margin-top: 30px;
+  }
+  &__heading {
+    margin-top: 10px;
+    @include DescHeading5;
+    text-transform: none;
+  }
+  &__description {
+    @include DescSecondaryText;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote {
+    &__inner {
+      padding-top: 140px;
+    }
+    &__text {
+      @include DescQuote;
+    }
+  }
+}
+
+@media (min-width: 1194px) {
+  .quote {
+    &__text {
+      max-width: 786px;
+    }
+    &__inner {
+      padding-top: 170px;
+    }
+  }
+}
