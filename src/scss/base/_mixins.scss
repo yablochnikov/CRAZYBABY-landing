@@ -133,14 +133,22 @@
   outline: none;
 }
 
-// @mixin blackButton {
-//   background: colors.$mainTextColor;
-// }
+@mixin DeskButton {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #0db2b3;
+}
 
-// @mixin blackButtonHover {
-//   background: colors.$hover;
-// }
+@mixin MobileMarginTop {
+  margin-top: 110px;
+}
 
-// @mixin blackButtonDisabled {
-//   background: colors.$disabled;
-// }
+@mixin TabletMarginTop {
+  margin-top: 140px;
+}
+
+@mixin DeskMarginTop {
+  margin-top: 170px;
+}

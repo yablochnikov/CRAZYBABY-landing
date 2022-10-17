@@ -14,9 +14,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-ttf2woff": "^1.1.1",
-    "gulp-ttf2woff2": "^4.0.1"
+    "gulp-sass": "^5.1.0"
   },
   "browserslist": [
     "defaults",
@@ -24,13 +22,10 @@
     "maintained node versions"
   ],
   "description": "",
-  "overrides": {
-    "graceful-fs": "^4.2.9"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.9"
-  },
+  "overrides": {},
+  "resolutions": {},
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "sass": "^1.49.7"

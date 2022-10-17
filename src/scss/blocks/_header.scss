@@ -25,6 +25,8 @@
           font-size: 14px;
           line-height: 17px;
           color: $color-less-dark;
+          transition: all 0.3s;
+
           &:hover {
             color: $color-most-dark;
           }
@@ -41,8 +43,12 @@
           border: none;
           width: 100px;
           height: 48px;
+          transition: all 0.3s;
           &:hover {
             background: $color-most-dark;
+          }
+          &:disabled {
+            background: $color-most-grey;
           }
         }
       }

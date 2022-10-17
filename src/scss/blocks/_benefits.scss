@@ -30,16 +30,17 @@
 @media (min-width: 768px) {
   .benefits {
     &__inner {
+      @include TabletMarginTop;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: baseline;
       justify-content: space-between;
     }
     &__item {
       width: 340px;
     }
     &__banner {
-      margin-top: 140px;
+      @include TabletMarginTop;
       height: 430px;
       background-image: url('../img/images/meet_tablet.png');
     }
@@ -50,7 +51,9 @@
   .benefits {
     &__item {
       width: 276px;
-      height: 265px;
+    }
+    &__inner {
+      margin-top: 0;
     }
     &__banner {
       margin-top: 170px;
