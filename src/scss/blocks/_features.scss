@@ -1,4 +1,3 @@
-
 .features {
   .container {
     padding: 0;
@@ -36,7 +35,7 @@
         font-weight: 400;
         font-size: 11px;
         line-height: 13px;
-        color: #0c797a;
+        color: $color-most-light2;
       }
     }
   }
@@ -50,14 +49,14 @@
         width: 247px;
         margin-top: 10px;
         @include DescSecondaryText;
-        color: #333;
+        color: $color-medium-dark;
         word-wrap: wrap;
       }
     }
     &__heading {
       margin-top: 30px;
       @include MobileHeading3;
-      color: #0c797a;
+      color: $color-most-light2;
     }
     &__img {
       height: 155px;
@@ -120,7 +119,7 @@
     }
     &__item {
       &-heading {
-        color: #0c797a;
+        color: $color-most-light2;
         margin-top: 60px;
         margin-bottom: 20px;
         @include DescHeading3;
@@ -129,7 +128,7 @@
     &__list {
       &-item {
         @include DescMainText;
-        color: #333;
+        color: $color-medium-dark;
         margin-bottom: 10px;
       }
     }
