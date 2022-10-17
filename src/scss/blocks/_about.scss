@@ -2,38 +2,46 @@
   &__inner {
     @include MobileMarginTop;
   }
+
   &-heading {
     @include MobileHeading2;
   }
-  &__content {
-    &-img {
-      margin-top: 30px;
-      height: 210px;
-      width: 100%;
-      background: url('../img/images/about_mobile.jpg') center/cover no-repeat;
-    }
-    &-description {
-      margin-top: 20px;
-      @include DescSecondaryText;
-    }
-    &-link {
-      display: block;
-      margin-top: 30px;
-      @include DeskButton;
-      text-decoration: none;
 
-      &:hover {
+  &__content {
+    .content {
+      &__img {
+        margin-top: 30px;
+        height: 210px;
+        width: 100%;
+        background: url('../img/images/about_mobile.jpg') center/cover no-repeat;
+      }
+
+      &__description {
+        margin-top: 20px;
+        @include DescSecondaryText;
+      }
+
+      &__link {
+        display: block;
+        margin-top: 30px;
+        @include DeskButton;
+        text-decoration: none;
+
+        &:hover {
+          div {
+            width: 128px;
+          }
+        }
+
         div {
-          width: 128px;
+          transition: width 0.3s;
+          height: 2px;
+          width: 53px;
+          background-color: $color-most-light;
         }
       }
-      div {
-        transition: width 0.3s;
-        height: 2px;
-        width: 53px;
-        background-color: $color-most-light;
-      }
     }
+
     &__banner {
       width: 100%;
       background: none;
@@ -47,27 +55,36 @@
     .container {
       padding: 0;
     }
+
     &__content {
       margin-left: 20px;
       max-width: 340px;
-      &-img {
-        display: none;
-      }
-      &-link {
-        margin-top: 60px;
-      }
-      &-heading {
-        @include TabletHeading2;
-      }
-      &-description {
-        margin-top: 30px;
-        @include DescMainText;
+
+      .content {
+        &__img {
+          display: none;
+        }
+
+        &__link {
+          margin-top: 60px;
+        }
+
+        &__heading {
+          @include TabletHeading2;
+        }
+
+        &__description {
+          margin-top: 30px;
+          @include DescMainText;
+        }
       }
     }
+
     &__inner {
       @include TabletMarginTop;
       display: flex;
     }
+
     &__banner {
       width: 50%;
       background: url('../img/images/about_tablet.jpg') no-repeat;
@@ -81,21 +98,27 @@
     &__inner {
       @include DeskMarginTop;
     }
+
     .container {
       padding: 0 20px;
     }
+
     &__banner {
       background: url('../img/images/about_desktop.jpg') center no-repeat;
       height: 388px;
     }
+
     &__content {
       width: 100%;
       min-width: 582px;
-      &-heading {
-        @include DescHeading2;
-      }
-      &-description {
-        @include DescMainText;
+
+      .content {
+        &__heading {
+          @include DescHeading2;
+        }
+        &__description {
+          @include DescMainText;
+        }
       }
     }
   }

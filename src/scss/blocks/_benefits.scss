@@ -1,24 +1,29 @@
 .benefits {
   margin-top: 45px;
-  &__item {
+
+  .card {
     display: flex;
     flex-direction: column;
     text-align: center;
-    &-img {
+
+    &__img {
       margin: 0 auto;
       width: 50px;
       height: 40px;
       margin-top: 65px;
     }
-    &-heading {
+
+    &__heading {
       margin-top: 40px;
       @include DescHeading4;
     }
-    &-description {
+
+    &__description {
       margin-top: 20px;
       @include DescSecondaryText;
     }
   }
+
   &__banner {
     margin-top: 110px;
     background: url('../img/images/meet_mobile.png') center center no-repeat;
@@ -36,9 +41,11 @@
       align-items: baseline;
       justify-content: space-between;
     }
-    &__item {
+
+    .card {
       width: 340px;
     }
+
     &__banner {
       @include TabletMarginTop;
       height: 430px;
@@ -49,12 +56,14 @@
 
 @media (min-width: 1194px) {
   .benefits {
-    &__item {
-      width: 276px;
-    }
     &__inner {
       margin-top: 0;
     }
+
+    .card {
+      width: 276px;
+    }
+
     &__banner {
       margin-top: 170px;
       height: 520px;

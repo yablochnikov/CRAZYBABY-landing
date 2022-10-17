@@ -2,9 +2,11 @@
   &__inner {
     @include MobileMarginTop;
   }
+
   &__heading {
     @include MobileHeading2;
   }
+
   .form {
     &__input {
       margin-top: 27px;
@@ -12,6 +14,7 @@
       width: 100%;
       padding: 12px 20px;
     }
+
     &__textarea {
       padding: 12px 20px;
       height: 128px;
@@ -19,6 +22,7 @@
       width: 100%;
       resize: none;
     }
+
     &__button {
       margin-top: 30px;
       text-align: center;
@@ -30,9 +34,11 @@
       color: #fff;
       cursor: pointer;
       transition: all 0.3s;
+
       &:hover {
         background-color: $color-most-light2;
       }
+
       &:disabled {
         background-color: $color-less-light;
       }
@@ -55,9 +61,11 @@
     &__heading {
       @include DescHeading2;
     }
+
     &__inner {
       align-items: flex-start;
     }
+
     .form {
       &__input {
         margin-top: 0;

@@ -19,22 +19,7 @@
       &__item {
         text-transform: uppercase;
         width: 100px;
-        &-link {
-          text-decoration: none;
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 17px;
-          color: $color-less-dark;
-          transition: all 0.3s;
 
-          &:hover {
-            color: $color-most-dark;
-          }
-        }
-
-        &-active {
-          color: $color-most-dark;
-        }
         button {
           @include DesButton;
           cursor: pointer;
@@ -50,6 +35,20 @@
           &:disabled {
             background: $color-most-grey;
           }
+        }
+      }
+      &__link {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-less-dark;
+        transition: all 0.3s;
+        &-active {
+          color: $color-most-dark;
+        }
+        &:hover {
+          color: $color-most-dark;
         }
       }
     }

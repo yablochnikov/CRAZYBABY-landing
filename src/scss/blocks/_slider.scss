@@ -1,0 +1,92 @@
+.slide {
+  &__arrows {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__counter {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+
+    &__status {
+      text-align: center;
+      @include DescMainText;
+    }
+
+    span {
+      margin-left: 3px;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 13px;
+      color: $color-most-light2;
+    }
+  }
+}
+
+.slider {
+  &__list {
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    &-item {
+      width: 247px;
+      margin-top: 10px;
+      @include DescSecondaryText;
+      color: $color-medium-dark;
+      word-wrap: wrap;
+    }
+  }
+
+  &__heading {
+    margin-top: 30px;
+    @include TabletMarginTop;
+    @include MobileHeading3;
+    color: $color-most-light2;
+  }
+
+  &__img {
+    height: 155px;
+    width: 100%;
+    background: url('/../img/images/features_tablet.png');
+    background-size: cover;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider {
+    &__controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100px;
+    }
+
+    &__heading {
+      margin-top: 0;
+    }
+
+    &__counter {
+      display: block;
+    }
+
+    &__img {
+      position: absolute;
+      width: 415px;
+      height: 225px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1194px) {
+  .slider {
+    display: none;
+  }
+}

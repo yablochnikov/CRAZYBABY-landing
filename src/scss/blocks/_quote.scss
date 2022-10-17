@@ -1,24 +1,28 @@
 .quote {
   &__inner {
-    padding-top: 110px;
+    @include MobileMarginTop;
     height: 320px;
     background: url('../img/images/quote.png') center center no-repeat;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   &__text {
     @include MobileQuote;
     text-align: center;
   }
+
   &__avatar {
     margin-top: 30px;
   }
+
   &__heading {
     margin-top: 10px;
     @include DescHeading5;
     text-transform: none;
   }
+
   &__description {
     @include DescSecondaryText;
   }
@@ -27,8 +31,9 @@
 @media (min-width: 768px) {
   .quote {
     &__inner {
-      padding-top: 140px;
+      @include TabletMarginTop;
     }
+
     &__text {
       @include DescQuote;
     }
@@ -40,8 +45,9 @@
     &__text {
       max-width: 786px;
     }
+
     &__inner {
-      padding-top: 170px;
+      @include DeskMarginTop;
     }
   }
 }

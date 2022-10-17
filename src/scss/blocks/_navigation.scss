@@ -5,25 +5,28 @@
 @media (min-width: 1194px) {
   .navigation {
     display: block;
+
     &__inner {
       margin: 0 auto;
       @include DeskMarginTop;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 76px;
       width: 759px;
     }
+
     &__link {
       @include DescTertiaryText;
       text-decoration: none;
       color: $color-medium-dark;
       transition: all 0.3s;
+
       &-active {
         color: $color-most-dark;
         @include DescHeading6;
       }
+
       &:hover {
         color: $color-most-dark;
       }
