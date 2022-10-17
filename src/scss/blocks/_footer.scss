@@ -1,0 +1,42 @@
+
+.footer {
+  &__logo {
+    display: none;
+  }
+  &__inner {
+    @include MobileMarginTop;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .social {
+    &__item {
+      width: 24px;
+      height: 24px;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .privacy {
+    color: #bdbdbd;
+    margin-top: 30px;
+    text-align: center;
+    @include DescSecondaryText;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__inner {
+      @include TabletMarginTop;
+    }
+    &__logo {
+      display: block;
+    }
+  }
+  .social {
+    margin-top: 60px;
+  }
+}
