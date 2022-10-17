@@ -1,0 +1,143 @@
+
+.features {
+  .container {
+    padding: 0;
+  }
+  &__items {
+    display: none;
+  }
+  &__heading {
+    padding: 0 20px;
+    @include MobileHeading2;
+  }
+  &__inner {
+    padding: 0 20px;
+    background-color: $color-medium-light;
+    margin-top: 32px;
+    box-shadow: 0 8px 6px -6px black;
+  }
+  .slide {
+    &__arrows {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    &__counter {
+      justify-content: center;
+      display: flex;
+      margin-top: 10px;
+      &__status {
+        text-align: center;
+        @include DescMainText;
+      }
+      span {
+        margin-left: 3px;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #0c797a;
+      }
+    }
+  }
+
+  .slider {
+    &__list {
+      width: 280px;
+      margin-top: 20px;
+      margin-left: 20px;
+      &-item {
+        width: 247px;
+        margin-top: 10px;
+        @include DescSecondaryText;
+        color: #333;
+        word-wrap: wrap;
+      }
+    }
+    &__heading {
+      margin-top: 30px;
+      @include MobileHeading3;
+      color: #0c797a;
+    }
+    &__img {
+      height: 155px;
+      width: 100%;
+      background: url('/../img/images/features_tablet.png');
+      background-size: cover;
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .features {
+    &__inner {
+      padding: 60px 90px;
+      position: relative;
+    }
+    &__heading {
+      @include TabletMarginTop;
+    }
+
+    .slider {
+      &__controls {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100px;
+      }
+      &__heading {
+        margin-top: 0;
+      }
+      &__counter {
+        display: block;
+      }
+      &__img {
+        position: absolute;
+        width: 415px;
+        height: 225px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1194px) {
+  .features {
+    &__items {
+      display: block;
+      padding-top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      .features__item {
+        flex: 0 50%;
+      }
+    }
+    .slider {
+      display: none;
+    }
+    &__item {
+      &-heading {
+        color: #0c797a;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        @include DescHeading3;
+      }
+    }
+    &__list {
+      &-item {
+        @include DescMainText;
+        color: #333;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .slider {
+    &__img {
+      width: 543px;
+      height: 301px;
+    }
+  }
+}
