@@ -1,0 +1,106 @@
+.technology {
+  &__inner {
+    @include MobileMarginTop;
+  }
+  &__heading {
+    @include MobileHeading2;
+  }
+
+  &__img {
+    margin-top: 30px;
+    height: 210px;
+    width: 100%;
+    background: url('../img/images/technology_mobile.png') center/cover
+      no-repeat;
+  }
+  &__description {
+    margin-top: 20px;
+    @include DescSecondaryText;
+  }
+  &__link {
+    display: block;
+    margin-top: 30px;
+    @include DeskButton;
+    text-decoration: none;
+    &:hover {
+      div {
+        width: 128px;
+      }
+    }
+    div {
+      transition: width 0.3s;
+      height: 2px;
+      width: 53px;
+      background-color: $color-most-light;
+    }
+  }
+  &__banner {
+    display: none;
+    width: 100%;
+    background: none;
+    height: 415px;
+  }
+}
+
+@media (min-width: 768px) {
+  .technology {
+    .container {
+      padding: 0;
+    }
+    &__content {
+      margin-left: 35px;
+      margin-right: 20px;
+      max-width: 340px;
+    }
+    &__img {
+      display: none;
+    }
+    &__link {
+      margin-top: 60px;
+    }
+    &__heading {
+      @include TabletHeading2;
+    }
+    &__description {
+      margin-top: 30px;
+      @include DescMainText;
+    }
+    &__inner {
+      @include TabletMarginTop;
+      display: flex;
+    }
+    &__banner {
+      display: block;
+      width: 374px;
+      background: url('../img/images/technology_tablet.jpg') no-repeat;
+    }
+  }
+}
+
+@media (min-width: 1194px) {
+  .technology {
+    &__inner {
+      @include DeskMarginTop;
+    }
+    .container {
+      padding: 0 20px;
+    }
+    &__banner {
+      background: url('../img/images/technology_desktop.jpg') center/cover
+        no-repeat;
+      height: 388px;
+    }
+    &__content {
+      margin-left: 0;
+      width: 100%;
+      min-width: 582px;
+    }
+
+    &__heading {
+      @include DescHeading2;
+    }
+    &__description {
+      @include DescMainText;
+    }
+  }
+}
